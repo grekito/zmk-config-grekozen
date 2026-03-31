@@ -1,0 +1,54 @@
+if SHIELD_GREKOZEN_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Grekozen"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_GREKOZEN_LEFT || SHIELD_GREKOZEN_RIGHT || SHIELD_GREKOZEN_DONGLE
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
+    default y
+
+if ZMK_DISPLAY
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
+if SHIELD_GREKOZEN_DONGLE
+
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
+
+endif
+
+endif # ZMK_DISPLAY
+
+if LVGL
+
+config LV_Z_VDB_SIZE
+    default 64
+
+config LV_DPI_DEF
+    default 148
+
+config LV_BITS_PER_PIXEL
+    default 1
+
+choice LV_COLOR_DEPTH
+    default LV_COLOR_DEPTH_1
+endchoice
+
+endif # LVGL
+
+endif
