@@ -43,6 +43,7 @@ config LV_DPI_DEF
     default 148
 
 config LV_BITS_PER_PIXEL
+    int
     default 1
 
 choice LV_COLOR_DEPTH
