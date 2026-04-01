@@ -1,5 +1,9 @@
 #include "grekozen.dtsi"
 
+&default_transform {
+	col-offset = <7>;
+};
+
 / {
 	chosen {
 		zmk,kscan = &default_kscan;
