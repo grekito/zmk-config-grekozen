@@ -15,19 +15,6 @@
 };
 
 / {
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&right_encoder>;
-        triggers-per-rotation = <20>;
-    };
-
-    behaviors {
-    vol_encoder: vol_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&kp A>, <&kp D>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap"; 
@@ -48,7 +35,6 @@
 &kp F18  &kp F19  &kp F20  &kp F21  &kp F22
 &kp F23  &kp F24  &trans   &trans   &tog 3
             >;
-            sensor-bindings = <&vol_encoder>;
         };
 
         NUM {
