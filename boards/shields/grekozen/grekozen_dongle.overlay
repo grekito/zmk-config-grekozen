@@ -2,7 +2,7 @@
 #include "grekozen.dtsi"
 
 &default_transform {
-  row-offset = <4>;
+  row-offset = <5>;
 };
 
 / {
