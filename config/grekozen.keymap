@@ -13,26 +13,52 @@
 / {
 
     keymap {
-        compatible = "zmk,keymap"; 
+      compatible = "zmk,keymap"; 
 
-        BASE {
-            display-name = "BASE";
-// ------------------------------------------------------------------------------------------------
-// | TAB |  Q |  W |  E |  R |  T |   |  Y |  U |  I |  O |  P | ESC |
-// |CTRL |  A |  S |  D |  F |  G |   |  H |  J |  K |  L |  ; |  '  |
-// |SHFT |  Z |  X |  C |  V |  B |   |  N |  M |  , |  . |  / |ALT |
-//                | GUI | L2 | SPC |   | ENT | L1 | BSPC |
-          bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &kp SPACE  &trans  &trans  &trans  &trans
+      BASE {
+        display-name = "BASE";
+        bindings = <
+          &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans  &trans  &trans  &kp SPACE  &trans  &trans  &trans  &trans
 
-&trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans
-            >;
-        };
+          &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans
+        >;
+      };
+
+      NUM {
+        display-name = "NUM";
+        bindings = <
+          &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans  &trans  &trans  &kp SPACE  &trans  &trans  &trans  &trans
+
+          &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans
+        >;
+      };
+
+      FUN {
+        display-name = "FUN";
+        bindings = <
+          &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans  &trans  &trans  &kp SPACE  &trans  &trans  &trans  &trans
+
+          &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans
+        >;
+      };
+
     };
 };
